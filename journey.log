@@ -1,0 +1,13 @@
+[Dec/20/2023 — 4:11 PM][SUCCESS] - Logger initialized.
+[Dec/20/2023 — 4:11 PM][INFO] - Starting the script
+[Dec/20/2023 — 4:11 PM][INFO] - This is an informational message.
+[Dec/20/2023 — 4:11 PM][WARNING] - This is a warning message.
+[Dec/20/2023 — 4:11 PM][ERROR] - This is an error message.
+[Dec/20/2023 — 4:11 PM][SUCCESS] - This is a success message.
+[Dec/20/2023 — 4:11 PM][INFO] - This is a bold informational message.
+[Dec/20/2023 — 4:11 PM][INFO] - This is a bolded informational message.
+[Dec/20/2023 — 4:11 PM][WARNING] - This is a bolded warning message.
+[Dec/20/2023 — 4:11 PM][ERROR] - This is a bolded error message.
+[Dec/20/2023 — 4:11 PM][SUCCESS] - This is a bolded success message.
+[Dec/20/2023 — 4:11 PM][INFO] - Environment Verification: Ensuring Compatibility
+[Dec/20/2023 — 4:11 PM][INFO] - Script execution completed
