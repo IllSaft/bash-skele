@@ -1,3 +1,4 @@
+#!/bin/bash
 # This script contains helper functions that provide various utilities to the application.
 
 # Sets the terminal title to the provided argument.

@@ -1,13 +1,21 @@
-[Dec/20/2023 — 4:14 PM][SUCCESS] - Logger initialized.
-[Dec/20/2023 — 4:14 PM][INFO] - Starting the script
-[Dec/20/2023 — 4:14 PM][INFO] - This is an informational message.
-[Dec/20/2023 — 4:14 PM][WARNING] - This is a warning message.
-[Dec/20/2023 — 4:14 PM][ERROR] - This is an error message.
-[Dec/20/2023 — 4:14 PM][SUCCESS] - This is a success message.
-[Dec/20/2023 — 4:14 PM][INFO] - This is a bold informational message.
-[Dec/20/2023 — 4:14 PM][INFO] - This is a bolded informational message.
-[Dec/20/2023 — 4:14 PM][WARNING] - This is a bolded warning message.
-[Dec/20/2023 — 4:14 PM][ERROR] - This is a bolded error message.
-[Dec/20/2023 — 4:14 PM][SUCCESS] - This is a bolded success message.
-[Dec/20/2023 — 4:14 PM][INFO] - Environment Verification: Ensuring Compatibility
-[Dec/20/2023 — 4:14 PM][INFO] - Script execution completed
+[VERBOSE] [DEBUG] [SUCCESS] - Logger Initialized.
+[VERBOSE] [DEBUG] [ UNIX Bash Skeleton ] - [ UNIX Bash Skeleton ]
+[VERBOSE] [DEBUG] [IMPORTANT] - Environment Verification: Ensuring Compatibility
+[VERBOSE] [DEBUG] [SUCCESS] - Environment Setup.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][DEBUG] - Debugger Enabled.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][INFO] - This is an informational message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][WARNING] - This is a warning message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][ERROR] - This is an error message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][SUCCESS] - This is a success message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][INFO] - This is a bolded informational message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][WARNING] - This is a bolded warning message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][ERROR] - This is a bolded error message.
+[VERBOSE] [DEBUG] [Dec/25/2023 — 7:24 PM][SUCCESS] - This is a bolded success message.
+[VERBOSE] [DEBUG] [INFO] - This is a bolded informational message.
+[VERBOSE] [DEBUG] [WARNING] - This is a bolded warning message.
+[VERBOSE] [DEBUG] [ERROR] - This is a bolded error message.
+[VERBOSE] [DEBUG] [SUCCESS] - This is a bolded success message.
+[VERBOSE] [DEBUG] [1] Custom Log Prefix 1 ] - This is a custom log prefix.
+[VERBOSE] [DEBUG] [2] Custom Log Prefix 2 ] - This is a custom log prefix.
+[VERBOSE] [DEBUG] [3] Custom Log Prefix 3 ] - This is a custom log prefix.
+[VERBOSE] [DEBUG] [SUCCESS] - Main script execution completed

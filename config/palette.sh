@@ -1,9 +1,9 @@
+#!/bin/bash
 # Color Palette Script
-# This script defines a color palette using ANSI color codes for logging and styling.
-# It includes standard colors and custom log level colors.
+# This script defines a color palette using `tput` commands for enhanced logging and styling in Bash scripts.
 
 # Load Custom Colors from Settings
-# Ensure that settings.cfg exists in the correct path
+# Ensure that settings.cfg is available in the specified path.
 if [ -f "./config/settings.cfg" ]; then
     source ./config/settings.cfg
 else
@@ -11,30 +11,46 @@ else
     exit 1
 fi
 
-# Color Palette Definition
-# Associative array to hold ANSI color codes.
+# Define Color Palette using `tput`
+# Basic colors
 declare -A COLOR_PALETTE=(
-    [BLACK]='\033[0;30m'
-    [RED]='\033[0;31m'
-    [GREEN]='\033[0;32m'
-    [YELLOW]='\033[0;33m'
-    [BLUE]='\033[0;34m'
-    [PURPLE]='\033[0;35m'
-    [CYAN]='\033[0;36m'
-    [WHITE]='\033[0;37m'
-    [RESET]='\033[0m'
-    [INFO]="$COLOR_INFO"
-    [SUCCESS]="$COLOR_SUCCESS"
-    [WARNING]="$COLOR_WARNING"
-    [ERROR]="$COLOR_ERROR"
-    [DEBUG]='\033[0;35m'
+    [BLACK]=$(tput setaf 0)
+    [RED]=$(tput setaf 1)
+    [GREEN]=$(tput setaf 2)
+    [YELLOW]=$(tput setaf 3)
+    [BLUE]=$(tput setaf 4)
+    [PURPLE]=$(tput setaf 5)
+    [CYAN]=$(tput setaf 6)
+    [WHITE]=$(tput setaf 7)
 )
 
+# Extended Colors from settings.cfg
+# Custom color assignments for specific log types
+COLOR_PALETTE[INFO]="$COLOR_INFO"
+COLOR_PALETTE[INFO_HEADER]="$COLOR_INFO_HEADER"
+COLOR_PALETTE[IMPORTANT]="$COLOR_IMPORTANT"
+COLOR_PALETTE[NOTE]="$COLOR_NOTE"
+COLOR_PALETTE[TIP]="$COLOR_TIP"
+COLOR_PALETTE[CONFIRMATION]="$COLOR_CONFIRMATION"
+COLOR_PALETTE[SUCCESS]="$COLOR_SUCCESS"
+COLOR_PALETTE[WARNING]="$COLOR_WARNING"
+COLOR_PALETTE[ERROR]="$COLOR_ERROR"
+COLOR_PALETTE[DEBUG]="$COLOR_DEBUG"
+COLOR_PALETTE[VERBOSE]="$COLOR_VERBOSE"
+COLOR_PALETTE[QUESTION]="$COLOR_QUESTION"
+COLOR_PALETTE[CAUTION]="$COLOR_CAUTION"
+COLOR_PALETTE[FOCUS]="$COLOR_FOCUS"
+COLOR_PALETTE[HIGHLIGHT]="$COLOR_HIGHLIGHT"
+COLOR_PALETTE[NEUTRAL]="$COLOR_NEUTRAL"
+COLOR_PALETTE[ALERT]="$COLOR_ALERT"
+
+# Reset color
+COLOR_PALETTE[RESET]=$(tput sgr0)
+
 # Add Bold Variants to the Palette
-# Adding Bold Variants
+# Applying bold formatting to basic colors
 for color in BLACK RED GREEN YELLOW BLUE PURPLE CYAN WHITE; do
-    base_color_code="${COLOR_PALETTE[$color]}"
-    bold_color_code="\033[1;${base_color_code:4}"
-    COLOR_PALETTE["BOLD_$color"]="$bold_color_code"
+    COLOR_PALETTE["BOLD_$color"]="$(tput bold)${COLOR_PALETTE[$color]}"
 done
-# This script can be sourced in other scripts to use the defined color palette.
+
+# Script can be sourced in other scripts to utilize the defined color palette.
